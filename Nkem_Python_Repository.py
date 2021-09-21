@@ -317,6 +317,32 @@ x = (5,) # Even when defining a tuple with a single value, Python needs you to p
 .insert(index, value) # to insert a value into a particular index location in a list
 .sort() # To sort the contents of your list in place. 
 
+      
+ # List Comprehensions
+ List comprehensions provide a concise way to create lists. Common applications are to make new lists where  each element is the result of some 
+ operations applied to each member of another sequence or iterable, or to create a subsequence of those elements that satisfy a certain condition
+      
+ Example - There are 3 methods 
+ Method 1 
+ squares = []
+>>> for x in range(10):
+...     squares.append(x**2)
+...
+>>> squares
+output: [0, 1, 4, 9, 16, 25, 36, 49, 64, 81]
+
+Method 2
+squares = list(map(lambda x: x**2, range(10)))
+      
+Method 3
+squares = [x**2 for x in range(10)]
+
+      
+      
+      
+      
+      
+      
 '''
 Sets are unordered collections of unique items.
  Note that elements in a set cannot be accessed by indexing, like lists and tuples.
